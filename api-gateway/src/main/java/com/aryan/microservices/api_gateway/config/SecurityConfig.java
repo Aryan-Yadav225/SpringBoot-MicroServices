@@ -12,7 +12,6 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import java.util.Arrays;
 import java.util.List;
 
-
 @Configuration
 public class SecurityConfig {
 
@@ -41,7 +40,6 @@ public class SecurityConfig {
                 .build();
     }
 
-
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
@@ -52,5 +50,4 @@ public class SecurityConfig {
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
 }
